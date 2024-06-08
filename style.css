@@ -1,185 +1,211 @@
-body{
+/* Remove default margin and padding from the body */
+body {
     margin: 0;
     padding: 0;
-    
 }
-.card-holder{
+
+/* Style for the container holding all cards */
+.card-holder {
     padding: 4%;
     display: flex;
     flex-direction: row;
     background: black;
     height: 100vh;
+    /* Full viewport height */
 }
+
+/* General style for each card */
 .card {
-     position: relative;
-     width: 270px;
-     height: 590px;
-     overflow: hidden;
-     display: flex;
-     flex-direction: column;
-     justify-content: end;
+    position: relative;
+    width: 270px;
+    height: 590px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    /* Align content to the bottom */
 }
 
-   .card-1 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url(Images/fox.jpeg);
-            background-size: cover;
-            background-position: center;
-            z-index: 1;
-            transition: 0.9s ease;
-            box-shadow: 0 0 200px rgba(0,0,0,0.9) 
-           
-        }
+/* Styles for the first card's background image */
+.card-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(Images/fox.jpeg);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    transition: 0.9s ease;
+    box-shadow: 0 0 200px rgba(0, 0, 0, 0.9);
+    /* Box shadow for effect */
+}
 
-       .card-1::before {
-         content: '';
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         background: radial-gradient(ellipse , rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.5) 100%);
-         pointer-events: none; 
-        }
-        .card:hover .card-1 {
-            filter: blur(8px) grayscale(150%);
-            transform: scale(1.1);
-            
-        }
-        .card-2{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url(Images/whale.jpeg);
-            background-size: cover;
-            background-position: center;
-            z-index: 1;
-            transition: 0.9s ease;
-            margin-left: 4px; 
-            
-        }
-        .card-2::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(ellipse , rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.5) 100%);
-            pointer-events: none; 
-           }
-        
-        .card:hover .card-2 {
-            filter: blur(8px) grayscale(150%);
-            transform: scale(1.1);
-            
-        }
-            .card-3{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url(Images/Monkey.jpeg);
-            background-size: cover;
-            background-position: center;
-            z-index: 1;
-            transition: 0.9s ease;
-            margin-left: 4px; 
-            
-        }
-        .card-3::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(ellipse , rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.5) 100%);
-            pointer-events: none; 
-           }
-        
-        .card:hover .card-3 {
-            filter: blur(8px) grayscale(150%);
-            transform: scale(1.1);
-            
-        }
-        .card-4{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url(Images/Antilope.jpeg);
-            background-size: cover;
-            background-position: center;
-            z-index: 1;
-            transition: 0.9s ease;
-            margin-left: 4px; 
-            
-        }
-        .card-4::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(ellipse , rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.5) 100%);
-            pointer-events: none; 
-           }
-        
-        .card:hover .card-4 {
-            filter: blur(8px) grayscale(150%);
-            transform: scale(1.1);
-            
-        }
-      
+/* Overlay gradient for the first card */
+.card-1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.5) 100%);
+    pointer-events: none;
+}
 
+/* Hover effect for the first card */
+.card:hover .card-1 {
+    filter: blur(8px) grayscale(150%);
+    transform: scale(1.1);
+}
 
-        .text {
-            position: relative;
-            color: white;
-             z-index: 2;
-            transition: transform 0.9s ease;
-            margin-left: 5%;
-            font-family: 'DIN Condensed';
-            font-size: 20px;
-            top: 4%;
-          }
+/* Styles for the second card's background image */
+.card-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(Images/whale.jpeg);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    transition: 0.9s ease;
+    margin-left: 4px;
+    /* Margin between cards */
+}
 
-    
+/* Overlay gradient for the second card */
+.card-2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.5) 100%);
+    pointer-events: none;
+}
 
-        .card:hover .text {
-            color: #ecf0f1;
-            transform: translateY(-25%);
-        }
-      
-        .card a {
-            color: aqua;
-            text-decoration: none;
-            transform: translate(-50%, -50%);
-            transition: opacity 0.5s ease;
-            opacity: 0;
-            font-family: Arial, sans-serif;
-            font-size: 69%;
-           }
-        .card:hover a {
-            opacity: 1;
-        }
-        p{
-            font-family: 'Poppins', sans-serif;
-            font-size: 10px;
-            font-weight: 100;
-        }
+/* Hover effect for the second card */
+.card:hover .card-2 {
+    filter: blur(8px) grayscale(150%);
+    transform: scale(1.1);
+}
+
+/* Styles for the third card's background image */
+.card-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(Images/Monkey.jpeg);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    transition: 0.9s ease;
+    margin-left: 4px;
+}
+
+/* Overlay gradient for the third card */
+.card-3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.5) 100%);
+    pointer-events: none;
+}
+
+/* Hover effect for the third card */
+.card:hover .card-3 {
+    filter: blur(8px) grayscale(150%);
+    transform: scale(1.1);
+}
+
+/* Styles for the fourth card's background image */
+.card-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(Images/Antilope.jpeg);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    transition: 0.9s ease;
+    margin-left: 4px;
+}
+
+/* Overlay gradient for the fourth card */
+.card-4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.5) 100%);
+    pointer-events: none;
+}
+
+/* Hover effect for the fourth card */
+.card:hover .card-4 {
+    filter: blur(8px) grayscale(150%);
+    transform: scale(1.1);
+}
+
+/* Style for the text container inside each card */
+.text {
+    position: relative;
+    color: white;
+    z-index: 2;
+    /* Above the background image */
+    transition: transform 0.9s ease;
+    margin-left: 5%;
+    font-family: 'DIN Condensed';
+    font-size: 20px;
+    top: 4%;
+}
+
+/* Hover effect for the text */
+.card:hover .text {
+    color: #ecf0f1;
+    transform: translateY(-25%);
+}
+
+/* Style for the links inside the cards */
+.card a {
+    color: aqua;
+    text-decoration: none;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    font-family: Arial, sans-serif;
+    font-size: 69%;
+}
+
+/* Hover effect for the links */
+.card:hover a {
+    opacity: 1;
+}
+
+/* Style for paragraph text inside the cards */
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 100;
+}
+
+/* Responsive styles for small screens */
 @media (max-width:425px) {
- .text{
-    display: none;
- }
+    .text {
+        display: none;
+        /* Hide text on small screens */
+    }
 }
