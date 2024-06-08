@@ -10,7 +10,7 @@ This project consists of building an HTML and CSS Web that matches the appearanc
 ## Setting up the application:
 
 1.⁠ ⁠From your computer, open terminal
-2.⁠ ⁠Run ⁠ clone https://github.com/Promesse10/Photo-Gallery.git⁠ OR [Download](hhttps://github.com/Promesse10/Photo-Gallery.zip) the project
+2.⁠ ⁠Run ⁠ clone https://github.com/Promesse10/Photo-Gallery.git⁠ OR [Download](https://github.com/Promesse10/Photo-Gallery.zip) the project
 
 ## Screenshot
 
