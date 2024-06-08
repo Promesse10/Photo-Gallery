@@ -1,35 +1,29 @@
-PhotoGallery/
-│
-├── index.html
-├── style.css
-└── Images/
-    ├── fox.jpeg
-    ├── whale.jpeg
-    ├── Monkey.jpeg
-    └── Antilope.jpeg
-    HTML
-The HTML file provides the structure for the photo gallery, including:
+## Photo Gallery:
 
-Links to external CSS files for FontAwesome icons and Google Fonts.
-A main container (.card-holder) that holds all the cards.
-Each card has a background image, title, location, and a "Know more" link with an arrow icon.
-CSS
-The CSS file includes styles for:
+This project consists of building an HTML and CSS Web that matches the appearance of Photo Gallery page that matches with this [Figma Design](https://www.figma.com/design/XF6xlvvHBv12WFveDjVoso/COA-Take-home-Challenge?node-id=0-1&t=QFLYNT8Og9At8eUQ-0).
 
-The body to reset margin and padding.
-The card holder to arrange the cards in a row with flexbox.
-Individual cards with background images, hover effects, and overlay gradients.
-Text and link styling within each card.
-Media query for responsive design to hide text on small screens.
+## Technologies used:
 
-Key CSS Classes and Selectors
-.card-holder: Arranges the cards in a row and sets the background color and height.
-.card: Defines the size, positioning, and flex properties for the cards.
-.card-1, .card-2, .card-3, .card-4: Specific styles for each card's background image and hover effects.
-.text: Styles the text inside the cards, with transitions for hover effects.
-.card a: Styles the "Know more" link and transitions for hover effects.
-@media (max-width:425px): Hides the text on small screens for better responsiveness.
+•⁠  ⁠HTML
+•⁠  ⁠CSS
+
+## Setting up the application:
+
+1.⁠ ⁠From your computer, open terminal
+2.⁠ ⁠Run ⁠ clone https://github.com/Promesse10/Photo-Gallery.git⁠ OR [Download](hhttps://github.com/Promesse10/Photo-Gallery.zip) the project
+
+## Screenshot
+
+<img width="1247" alt="Screen Shot 1403-03-20 at 00 46 32" src="https://github.com/Promesse10/Photo-Gallery/assets/148845801/e5dc4b2b-885e-492b-95a5-2778a79907bb">
+
+<img width="325" alt="Screen Shot 1403-03-20 at 00 46 03" src="https://github.com/Promesse10/Photo-Gallery/assets/148845801/f7a81907-946e-4588-ab18-347482fb6a8b">
 
 
-Java Script Task run using : Code Runner
 
+### Raising an issue
+
+Click [here](https://github.com/Promesse10/Photo-Gallery/issues) to create an issue about this app
+
+## Author:
+
+Promesse IRAKOZE

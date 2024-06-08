@@ -1,20 +1,17 @@
-/* Remove default margin and padding from the body */
 body {
     margin: 0;
     padding: 0;
+
 }
 
-/* Style for the container holding all cards */
 .card-holder {
     padding: 4%;
     display: flex;
     flex-direction: row;
     background: black;
     height: 100vh;
-    /* Full viewport height */
 }
 
-/* General style for each card */
 .card {
     position: relative;
     width: 270px;
@@ -23,10 +20,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    /* Align content to the bottom */
 }
 
-/* Styles for the first card's background image */
 .card-1 {
     position: absolute;
     top: 0;
@@ -38,11 +33,9 @@ body {
     background-position: center;
     z-index: 1;
     transition: 0.9s ease;
-    box-shadow: 0 0 200px rgba(0, 0, 0, 0.9);
-    /* Box shadow for effect */
+    box-shadow: 0 0 200px rgba(0, 0, 0, 0.9)
 }
 
-/* Overlay gradient for the first card */
 .card-1::before {
     content: '';
     position: absolute;
@@ -54,13 +47,12 @@ body {
     pointer-events: none;
 }
 
-/* Hover effect for the first card */
 .card:hover .card-1 {
     filter: blur(8px) grayscale(150%);
     transform: scale(1.1);
+
 }
 
-/* Styles for the second card's background image */
 .card-2 {
     position: absolute;
     top: 0;
@@ -73,10 +65,9 @@ body {
     z-index: 1;
     transition: 0.9s ease;
     margin-left: 4px;
-    /* Margin between cards */
+
 }
 
-/* Overlay gradient for the second card */
 .card-2::before {
     content: '';
     position: absolute;
@@ -88,13 +79,12 @@ body {
     pointer-events: none;
 }
 
-/* Hover effect for the second card */
 .card:hover .card-2 {
     filter: blur(8px) grayscale(150%);
     transform: scale(1.1);
+
 }
 
-/* Styles for the third card's background image */
 .card-3 {
     position: absolute;
     top: 0;
@@ -107,9 +97,9 @@ body {
     z-index: 1;
     transition: 0.9s ease;
     margin-left: 4px;
+
 }
 
-/* Overlay gradient for the third card */
 .card-3::before {
     content: '';
     position: absolute;
@@ -121,13 +111,12 @@ body {
     pointer-events: none;
 }
 
-/* Hover effect for the third card */
 .card:hover .card-3 {
     filter: blur(8px) grayscale(150%);
     transform: scale(1.1);
+
 }
 
-/* Styles for the fourth card's background image */
 .card-4 {
     position: absolute;
     top: 0;
@@ -140,9 +129,9 @@ body {
     z-index: 1;
     transition: 0.9s ease;
     margin-left: 4px;
+
 }
 
-/* Overlay gradient for the fourth card */
 .card-4::before {
     content: '';
     position: absolute;
@@ -154,18 +143,18 @@ body {
     pointer-events: none;
 }
 
-/* Hover effect for the fourth card */
 .card:hover .card-4 {
     filter: blur(8px) grayscale(150%);
     transform: scale(1.1);
+
 }
 
-/* Style for the text container inside each card */
+
+
 .text {
     position: relative;
     color: white;
     z-index: 2;
-    /* Above the background image */
     transition: transform 0.9s ease;
     margin-left: 5%;
     font-family: 'DIN Condensed';
@@ -173,13 +162,13 @@ body {
     top: 4%;
 }
 
-/* Hover effect for the text */
+
+
 .card:hover .text {
     color: #ecf0f1;
     transform: translateY(-25%);
 }
 
-/* Style for the links inside the cards */
 .card a {
     color: aqua;
     text-decoration: none;
@@ -190,22 +179,18 @@ body {
     font-size: 69%;
 }
 
-/* Hover effect for the links */
 .card:hover a {
     opacity: 1;
 }
 
-/* Style for paragraph text inside the cards */
 p {
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
     font-weight: 100;
 }
 
-/* Responsive styles for small screens */
 @media (max-width:425px) {
     .text {
         display: none;
-        /* Hide text on small screens */
     }
 }
